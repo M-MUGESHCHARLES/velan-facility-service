@@ -1,0 +1,44 @@
+/* ==================================================== Navbar.js */
+
+#Logo {
+    height: auto;
+    width: 50px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#VFSName {
+    color: #16325B;
+}
+
+/* ==================================================== Footer.js */
+
+.social-icons{
+    height: auto;
+    width: 30px;
+}
+
+#Footer {
+    background-color: #192965;
+}
+
+#Footer p {
+    color: #6c757d;
+    margin: 0;
+        font-size: x-small;
+}
+
+#Footer h6 {
+    position: relative;
+    display: inline-block;
+}
+
+#Footer h6::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #6c757d;
+}
