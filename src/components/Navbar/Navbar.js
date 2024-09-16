@@ -24,23 +24,56 @@ export const Navbar = () => {
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active"  href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link fw-bold active"  href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
-                Dropdown
+              <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
+                Security Services
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Security Gaurd</a></li>
+                <li><a class="dropdown-item" href="#">Bouncer & Body Gaurd</a></li>
+                <li><a class="dropdown-item" href="#">Escort Gaurd</a></li>
+                <li><a class="dropdown-item" href="#">Female Security Gaurd</a></li>
+                <li><a class="dropdown-item" href="#">Cash Management</a></li>
+                <li><a class="dropdown-item" href="#">Dog Squads Service</a></li>
+                <li><a class="dropdown-item" href="#">Event Security</a></li>
+                <li><a class="dropdown-item" href="#">Tourist Security</a></li>
+                <li><a class="dropdown-item" href="#">Office Security</a></li>
+                <li><a class="dropdown-item" href="#">Building Security</a></li>
+                <li><a class="dropdown-item" href="#">Bank Security</a></li>
+                <li><a class="dropdown-item" href="#">Industrial Security</a></li>
+                <li><a class="dropdown-item" href="#">Retail Security</a></li>
+                <li><a class="dropdown-item" href="#">Hospital Security</a></li>
+                <li><a class="dropdown-item" href="#">Property Security</a></li>
+                <li><a class="dropdown-item" href="#">School Security</a></li>
               </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
+                Facility Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">House Keeping</a></li>
+                <li><a class="dropdown-item" href="#">Office Boy</a></li>
+                <li><a class="dropdown-item" href="#">Pantry Boy </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
+                Manpower Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Front & Back Office Manpower </a></li>
+                <li><a class="dropdown-item" href="#">Temp Staffing</a></li>
+                <li><a class="dropdown-item" href="#">Event Staffing</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Contact Us</a>
             </li>
           </ul>
         </div>

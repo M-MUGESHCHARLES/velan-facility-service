@@ -42,3 +42,18 @@
     left: 0;
     background-color: #6c757d;
 }
+
+/* ==================================================== QuickWhatsapp.js */
+
+a#QuickWhatsapp {
+    position: fixed;
+    z-index: 100;
+    bottom: 90px;
+    right: 65px;
+}
+
+a#QuickWhatsapp #SVG {
+    position: absolute;
+    height: 60px;
+    width: auto;
+}
