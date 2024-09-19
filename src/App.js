@@ -1,15 +1,21 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Footer from './components/Footer/Footer';
-import { Navbar } from './components/Navbar/Navbar';
-import QuickWhatsapp from './components/QuickWhatsapp/QuickWhatsapp';
+import HomePage from './pages/HomePage/HomePage';
+import { Layout } from './pages/Layout';
+import { AboutUs } from './pages/AboutUsPage/AboutUs';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <QuickWhatsapp />
-      <Footer />
-    </div>
+    <>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/"  element={<Layout/>}>
+          <Route index element={<HomePage/>} />
+          <Route path='About-Us' element={<AboutUs/>} />        
+        </Route>
+      </Routes>
+      </BrowserRouter>      
+    </>
   );
 }
 
