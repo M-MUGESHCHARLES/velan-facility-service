@@ -74,7 +74,7 @@ export const Navbar = () => {
               <Link to='/About-us' ><button className="nav-link fw-semibold px-lg-3" data-bs-dismiss="offcanvas" >About Us</button></Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link fw-semibold px-lg-3" data-bs-dismiss="offcanvas">Contact Us</a>
+              <Link to='/Contact-us' ><button className="nav-link fw-semibold px-lg-3" data-bs-dismiss="offcanvas" >Contact Us</button></Link>
             </li>
           </ul>
         </div>
