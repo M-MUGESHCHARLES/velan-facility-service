@@ -1,17 +1,17 @@
 import React from "react";
-import {ReactComponent as Mission} from '../../assets/svg/mission.svg';
-import {ReactComponent as Purpose} from '../../assets/svg/purpose.svg';
-import WhyChooseUs from '../../assets/images/whychooseus.jpg';
-import HowWeWork from '../../assets/images/HowWeWork.jpg';
-import WhyUs from '../../assets/images/why1.jpg';
-
-
+import { ReactComponent as Mission } from "../../assets/svg/mission.svg";
+import { ReactComponent as Purpose } from "../../assets/svg/purpose.svg";
+import WhyChooseUs from "../../assets/images/whychooseus.jpg";
+import HowWeWork from "../../assets/images/HowWeWork.jpg";
+import WhyUs from "../../assets/images/why1.jpg";
 
 export const AboutUs = () => {
   return (
     <section className="p-5" id="AboutUs">
       <div className="d-grid text-center container m-0">
-        <h1 className=" fw-bold ">WELCOME TO VELAN FACILITY SERVICE :</h1>
+        <h1 className=" fw-bold  text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
+          WELCOME TO VELAN FACILITY SERVICE{" "}
+        </h1>
         <p className=" fw-semibold indent">
           Welcome to Velan Facility Service (VFS), where safety, security, and
           manpower excellence meet. We pride ourselves on providing highly
@@ -23,10 +23,15 @@ export const AboutUs = () => {
           control office, ready to respond to any emergency situation.
         </p>
       </div>
+      <div className="mx-auto">
+        <hr className="hr" />
+      </div>
 
       <div>
-        <div id="OurMission">
-          <h2 className="text-center">Our Mission</h2>
+        <div className="px-md-5" id="OurMission">
+          <h2 className="text-center text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
+            Our Mission
+          </h2>
           <div className="row m-0">
             <div className="col-12 col-md-4 text-center">
               <Mission className="mission-svg" />
@@ -42,9 +47,14 @@ export const AboutUs = () => {
             </div>
           </div>
         </div>
+        <div className="mx-auto">
+          <hr className="hr" />
+        </div>
 
-        <div id="OurPurpose">
-          <h2 className="text-center">Our Purpose</h2>
+        <div className="px-md-5" id="OurPurpose">
+          <h2 className="text-center text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
+            Our Purpose
+          </h2>
           <div className="row m-0">
             <div className="col-12 col-md-8 d-flex align-items-center order-1 order-md-0 ">
               <p className="indent ">
@@ -60,9 +70,14 @@ export const AboutUs = () => {
             </div>
           </div>
         </div>
+        <div className="mx-auto">
+          <hr className="hr" />
+        </div>
 
-        <div id="OurServices">
-          <h2 className="text-center">Our Services</h2>
+        <div className="px-md-5" id="OurServices">
+          <h2 className="text-center text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
+            Our Services
+          </h2>
           <div className="row m-0">
             <div className="col-10 col-md-5 col-lg-4 mx-auto">
               <h6>Security services :</h6>
@@ -101,11 +116,15 @@ export const AboutUs = () => {
                 <li>Event Staffing</li>
               </ul>
             </div>
-            
           </div>
         </div>
-        <div className="row m-0 " id="WhyChoose">
-          <h2 className="col-12 order-0">Why Choose VFS ?</h2>
+        <div className="mx-auto">
+          <hr className="hr" />
+        </div>
+        <div className="row m-0 px-md-5 " id="WhyChoose">
+          <h2 className="col-12 order-0 text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
+            Why Choose VFS ?
+          </h2>
           <div className="col-10 col-md-4 order-1 order-md-2 text-center mx-auto ">
             <img src={WhyChooseUs} alt="" className="mx-auto w-75 h-auto" />
           </div>
@@ -122,8 +141,13 @@ export const AboutUs = () => {
             round-the-clock availability.
           </p>
         </div>
-        <div className="row m-0" id="HowWeWork">
-          <h2 className="col-12">How We Work ?</h2>
+        <div className="mx-auto">
+          <hr className="hr" />
+        </div>
+        <div className="row m-0 px-md-5 " id="HowWeWork">
+          <h2 className="col-12 text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
+            How We Work ?
+          </h2>
           <div className="col-10 col-md-4 text-center mx-auto">
             <img
               src={HowWeWork}
@@ -132,7 +156,7 @@ export const AboutUs = () => {
               className="mx-auto h-auto w-75 "
             />
           </div>
-          <p className="col-12 col-md-8indent ">
+          <p className="col-12 col-md-8 indent ">
             Our inspection team operates 24/7 to ensure consistent security and
             safety standards. We provide easy and flexible payment options,
             including handling legal entitlements like PF, ESI, and bonuses for
@@ -141,8 +165,13 @@ export const AboutUs = () => {
             customization as per your requirements.
           </p>
         </div>
-        <div className="row m-0" id='WhyUs'>
-          <h2 className="col-12 order-0">Why Us ?</h2>
+        <div className="mx-auto">
+          <hr className="hr" />
+        </div>
+        <div className="row m-0 px-md-5" id="WhyUs">
+          <h2 className="col-12 order-0 text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
+            Why Us ?
+          </h2>
           <div className="col-10 col-md-4 order-1 order-md-2 text-center mx-auto ">
             <img src={WhyUs} alt="" className="mx-auto w-75 h-auto" />
           </div>
@@ -155,8 +184,10 @@ export const AboutUs = () => {
             secure, professional, and well-managed, providing you with peace of
             mind and the highest standard of service.
           </p>
-          
         </div>
+      </div>
+      <div className="mx-auto">
+        <hr className="hr" />
       </div>
     </section>
   );

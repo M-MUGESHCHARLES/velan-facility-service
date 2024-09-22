@@ -1,3 +1,25 @@
+div hr.hr {
+    border: 1px solid #16325B;
+}
+
+.banner-image {
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    filter: brightness(0.5);
+}
+@media screen and (width > 750px) {
+ .banner-image{
+        height: 400px;
+    }    
+}
+@media screen and (width > 1020px) {
+ .banner-image{
+        height: 500px;
+    }    
+}
+
 /* ==================================================== Navbar.js */
 
 #Logo {
@@ -113,8 +135,25 @@ a#QuickWhatsapp #SVG {
 #CarouselBanner #ReadMore {
     text-decoration: none;
     width: fit-content;
+    width: -moz-fit-content; /* For Firefox */
+
 clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
+
+/* ===================================================== HomePage.js */
+
+#section1 , #section2 , .homepageBanner {
+    background-color: #EAE4DD;
+}
+
+#section3 {
+    background-color: #E1D7C6;
+}
+
+#section4 {
+    background-color: #CDC2A5;
+}
+
 
 /* ===================================================== HomePageSection1.js */
 
@@ -202,5 +241,3 @@ height: 40px;
             width: 90px;;
         }
 }
-
-

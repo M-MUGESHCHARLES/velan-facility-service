@@ -1,13 +1,12 @@
-import React from 'react'
-import { HomePageSection1 } from './Sections/HomePageSection1';
-import HomePageSection2 from './Sections/HomePageSection2';
+import React from "react";
+import { HomePageSection1 } from "./Sections/HomePageSection1";
+import HomePageSection2 from "./Sections/HomePageSection2";
 import Slider from "react-slick";
-import Image1 from '../../assets/images/security banner.jpg'
+import Image1 from "../../assets/images/security banner.jpg";
 import Image2 from "../../assets/images/DogSquad banners.jpg";
 import Image3 from "../../assets/images/housekeeping banner.jpg";
-import HomePageSection3 from './Sections/HomePageSection3';
-import { HomePageSection4 } from './Sections/HomePageSection4';
-import { Box } from '@mui/material';
+import HomePageSection3 from "./Sections/HomePageSection3";
+import { HomePageSection4 } from "./Sections/HomePageSection4";
 
 const CarouselBanner = () => {
   const settings = {
@@ -20,7 +19,7 @@ const CarouselBanner = () => {
     autoplaySpeed: 4000,
     arrows: false,
     accessibility: false,
-    adaptiveHeight:true,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 500,
@@ -32,16 +31,33 @@ const CarouselBanner = () => {
   };
   return (
     <>
-      <div className="slider-container" id='CarouselBanner'>
+      <div className="slider-container homepageBanner" id="CarouselBanner">
         <Slider {...settings}>
           <div className="banner-container">
             <div className="card text-bg-dark">
-              <img src={Image1} alt="" className="card-img w-100 banner-image" />
+              <img
+                src={Image1}
+                alt=""
+                className="card-img w-100 banner-image"
+              />
               <div className="card-img-overlay d-flex align-items-center">
-                <div className='ps-4'>
-                  <h3 className="card-title text-warning fw-bold">Security Service</h3>
-                  <p className="card-text pb-3">Security is our core business and we are very passionate about our work.</p>
-                  <a href='#' target='parent' className=' d-inline fw-bold pe-5 ps-3 py-2 rounded-1 text-bg-warning text-secondary' id='ReadMore' > Read More  </a>
+                <div className="p-5">
+                  <h3 className="card-title text-warning fw-bold pb-4">
+                    Security Service
+                  </h3>
+                  <p className="card-text p-3">
+                    Security is our core business and we are very passionate
+                    about our work.
+                  </p>
+                  <a
+                    href="#"
+                    target="parent"
+                    className=" d-inline fw-bold pe-5 ps-3 py-2 rounded-1 text-bg-warning text-secondary"
+                    id="ReadMore"
+                  >
+                    {" "}
+                    Read More{" "}
+                  </a>
                 </div>
               </div>
             </div>
@@ -49,48 +65,100 @@ const CarouselBanner = () => {
 
           <div className="banner-container">
             <div className="card text-bg-dark">
-              <img src={Image2} alt="" className="card-img w-100 banner-image" />
+              <img
+                src={Image2}
+                alt=""
+                className="card-img w-100 banner-image"
+              />
               <div className="card-img-overlay d-flex align-items-center">
-                <div className='ps-4'>
-                  <h3 className="card-title text-warning fw-bold">Dog SQUAD Service</h3>
-                  <p className="card-text pb-3">Our dog squad comprise of highly pedigreed and trained German Shepherds, Doberman and Labradors canine along with skilled and experienced handlers.</p>
-                  <a href='#' target='parent' className=' d-inline fw-bold pe-5 ps-3 py-2 rounded-1 text-bg-warning text-secondary' id='ReadMore' > Read More  </a>
+                <div className="p-5">
+                  <h3 className="card-title text-warning fw-bold pb-4">
+                    Dog SQUAD Service
+                  </h3>
+                  <p className="card-text p-3">
+                    Our dog squad comprise of highly pedigreed and trained
+                    German Shepherds, Doberman and Labradors canine along with
+                    skilled and experienced handlers.
+                  </p>
+                  <a
+                    href="#"
+                    target="parent"
+                    className=" d-inline fw-bold pe-5 ps-3 py-2 rounded-1 text-bg-warning text-secondary"
+                    id="ReadMore"
+                  >
+                    {" "}
+                    Read More{" "}
+                  </a>
                 </div>
               </div>
-            </div>          
+            </div>
           </div>
 
           <div className="banner-container">
             <div className="card text-bg-dark">
-              <img src={Image3} alt="" className="card-img w-100 banner-image" />
+              <img
+                src={Image3}
+                alt=""
+                className="card-img w-100 banner-image"
+              />
               <div className="card-img-overlay d-flex align-items-center">
-                <div className='ps-4'>
-                  <h3 className="card-title text-warning fw-bold">House Keeping Service </h3>
-                  <p className="card-text pb-3">We follow best housekeeping practice to earn customer satisfaction and thereby customer retention.</p>
-                  <a href='#' target='parent' className=' d-inline fw-bold pe-5 ps-3 py-2 rounded-1 text-bg-warning text-secondary' id='ReadMore' > Read More  </a>
+                <div className="p-5">
+                  <h3 className="card-title text-warning fw-bold pb-4">
+                    House Keeping Service{" "}
+                  </h3>
+                  <p className="card-text p-3">
+                    We follow best housekeeping practice to earn customer
+                    satisfaction and thereby customer retention.
+                  </p>
+                  <a
+                    href="#"
+                    target="parent"
+                    className=" d-inline fw-bold pe-5 ps-3 py-2 rounded-1 text-bg-warning text-secondary"
+                    id="ReadMore"
+                  >
+                    {" "}
+                    Read More{" "}
+                  </a>
                 </div>
               </div>
-            </div>        
+            </div>
           </div>
         </Slider>
       </div>
     </>
   );
-}
+};
 
 function HomePage() {
   return (
     <>
       <CarouselBanner />
-        
-          <div className='m-0 p-0 container-md mx-md-auto'>
-            <HomePageSection1 />
-            <HomePageSection2/>
-            <HomePageSection3/>
-            <HomePageSection4/>
-          </div>
+
+      <div className="m-0 p-0 px-md-5 mx-md-auto" id="section1">
+        <div className="m-0 p-0 px-md-5 mx-md-auto">
+          <HomePageSection1 />
+        </div>
+      </div>
+
+      <div className="m-0 p-0 px-md-5 mx-md-auto" id="section2">
+        <div className="m-0 p-0 px-md-5 mx-md-auto">
+          <HomePageSection2 />
+        </div>
+      </div>
+
+      <div className="m-0 p-0 px-md-5 mx-md-auto " id="section3">
+        <div className="m-0 p-0 px-md-5 mx-md-auto">
+          <HomePageSection3 />
+        </div>
+      </div>
+
+      <div className="m-0 p-0 px-md-5 mx-md-auto" id="section4">
+        <div className="m-0 p-0 px-md-5 mx-md-auto">
+          <HomePageSection4 />
+        </div>
+      </div>
     </>
   );
 }
 
-export default HomePage
+export default HomePage;
