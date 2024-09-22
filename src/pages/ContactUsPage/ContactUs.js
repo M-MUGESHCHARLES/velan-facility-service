@@ -57,7 +57,7 @@ function ContactUs() {
               </p>
 
               <p>
-                Our security company alternate contact number is{" "}
+                Our security company alternate contact number is
                 <strong>7092140297 / 6369292028</strong>
               </p>
               <ul className="list-unstyled">
@@ -85,7 +85,7 @@ function ContactUs() {
 
               <div class="wpcf7 js" id="wpcf7-f32-o2" lang="en-US" dir="ltr">
                 <div class="screen-reader-response">
-                  <p role="status" aria-live="polite" aria-atomic="true"></p>{" "}
+                  <p role="status" aria-live="polite" aria-atomic="true"></p>
                   <ul></ul>
                 </div>
                 <form
@@ -258,7 +258,7 @@ function ContactUs() {
             </div>
             <div className="col-12 col-lg-3 col-md-4 col-sm-6">
               <a class="btn btn-lg but-b" href="" target="_blank">
-                Switch to Velan Office{" "}
+                Switch to Velan Office
               </a>
             </div>
             <div className="col-12 col-lg-3 col-md-4 col-sm-6">

@@ -10,7 +10,7 @@ export const AboutUs = () => {
     <section className="p-5" id="AboutUs">
       <div className="d-grid text-center container m-0">
         <h1 className=" fw-bold  text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
-          WELCOME TO VELAN FACILITY SERVICE{" "}
+          WELCOME TO VELAN FACILITY SERVICE
         </h1>
         <p className=" fw-semibold indent">
           Welcome to Velan Facility Service (VFS), where safety, security, and

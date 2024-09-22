@@ -13,7 +13,7 @@ export const HomePageSection4 = () => {
         <div className="row m-0">
           <div className="col-12 text-center">
             <h2 className="my-2 fw-bold text-decoration-underline mb-4 link-offset-2 link-offset-1-hover lh-base">
-              {" "}
+              
               MANPOWER SERVICES
             </h2>
           </div>

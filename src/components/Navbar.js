@@ -35,7 +35,7 @@ export const Navbar = () => {
               <ul className="navbar-nav justify-content-end mx-auto">
                 <li className="nav-item" data-bs-dismiss="offcanvas">
                   <Link to="/">
-                    {" "}
+                    
                     <button className="nav-link fw-semibold px-lg-3 active">
                       Home
                     </button>
@@ -156,7 +156,7 @@ export const Navbar = () => {
                     </li>
                     <li>
                       <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Pantry Boy{" "}
+                        Pantry Boy
                       </a>
                     </li>
                   </ul>
@@ -173,7 +173,7 @@ export const Navbar = () => {
                   <ul className="dropdown-menu">
                     <li>
                       <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Front & Back Office Manpower{" "}
+                        Front & Back Office Manpower
                       </a>
                     </li>
                     <li>
@@ -215,8 +215,8 @@ export const Navbar = () => {
       </nav>
       <div className="border-bottom py-2">
         <h4 className="fw-bold text-center m-0" id="VFSName">
-          {" "}
-          VELAN FACILITY SERVICE{" "}
+          
+          VELAN FACILITY SERVICE
         </h4>
       </div>
     </header>

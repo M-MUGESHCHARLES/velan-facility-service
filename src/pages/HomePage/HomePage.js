@@ -55,8 +55,8 @@ const CarouselBanner = () => {
                     className=" d-inline fw-bold pe-5 ps-3 py-2 rounded-1 text-bg-warning text-secondary"
                     id="ReadMore"
                   >
-                    {" "}
-                    Read More{" "}
+                    
+                    Read More
                   </a>
                 </div>
               </div>
@@ -86,8 +86,8 @@ const CarouselBanner = () => {
                     className=" d-inline fw-bold pe-5 ps-3 py-2 rounded-1 text-bg-warning text-secondary"
                     id="ReadMore"
                   >
-                    {" "}
-                    Read More{" "}
+                    
+                    Read More
                   </a>
                 </div>
               </div>
@@ -104,7 +104,7 @@ const CarouselBanner = () => {
               <div className="card-img-overlay d-flex align-items-center">
                 <div className="p-5">
                   <h3 className="card-title text-warning fw-bold pb-4">
-                    House Keeping Service{" "}
+                    House Keeping Service
                   </h3>
                   <p className="card-text p-3">
                     We follow best housekeeping practice to earn customer
@@ -116,8 +116,8 @@ const CarouselBanner = () => {
                     className=" d-inline fw-bold pe-5 ps-3 py-2 rounded-1 text-bg-warning text-secondary"
                     id="ReadMore"
                   >
-                    {" "}
-                    Read More{" "}
+                    
+                    Read More
                   </a>
                 </div>
               </div>
