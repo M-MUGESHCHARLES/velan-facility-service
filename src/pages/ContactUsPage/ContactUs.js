@@ -1,10 +1,49 @@
 import React from "react";
 import "./ContactUs.css";
+import contact1 from "../../assets/images/contact1.jpg";
+import contact2 from "../../assets/images/contact2.jpg";
+import contact3 from "../../assets/images/contact3.jpg";
 
 function ContactUs() {
   return (
     <div>
-      <div class="innerContent pt-5 pb-3" id="contact-us">
+      {/* carousel */}
+      <div
+        id="carouselExampleAutoplaying"
+        className="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={contact1} class="d-block w-100" height={"500px"} alt="..." />
+          </div>
+          <div className="carousel-item">
+            <img src={contact2} class="d-block w-100" height={"500px"} alt="..." />
+          </div>
+          <div className="carousel-item">
+            <img src={contact3} class="d-block w-100" height={"500px"} alt="..." />
+          </div>
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="pt-5 pb-3" id="contact-us">
         <div class="container">
           <div class="row confrm">
             <div class="col-md-5 col-lg-4 coninfo">
@@ -22,9 +61,11 @@ function ContactUs() {
                 <strong>7092140297 / 6369292028</strong>
               </p>
               <ul className="list-unstyled">
-              
                 <li className="address">
-                  <h4 className="fs-5"><i className="fa-solid fa-location-dot fs-5"></i> VELAN FACILITY SERVICE</h4>
+                  <h4 className="fs-5">
+                    <i className="fa-solid fa-location-dot fs-5"></i> VELAN
+                    FACILITY SERVICE
+                  </h4>
                   <p>
                     No.6, R.E.Nagar,4th Street(West)
                     <br />
@@ -211,38 +252,22 @@ function ContactUs() {
         <div class="container">
           <div className="row row-gap-3">
             <div className="col-12 col-lg-3 col-md-4 col-sm-6">
-              <a
-                class="btn btn-lg but-b"
-                href=""
-                target="_blank"
-              >
+              <a class="btn btn-lg but-b" href="" target="_blank">
                 Introduction Video
               </a>
             </div>
             <div className="col-12 col-lg-3 col-md-4 col-sm-6">
-              <a
-                class="btn btn-lg but-b"
-                href=""
-                target="_blank"
-              >
+              <a class="btn btn-lg but-b" href="" target="_blank">
                 Switch to Velan Office{" "}
               </a>
             </div>
             <div className="col-12 col-lg-3 col-md-4 col-sm-6">
-              <a
-                class="btn btn-lg but-b"
-                href=""
-                target="_blank"
-              >
+              <a class="btn btn-lg but-b" href="" target="_blank">
                 Corporate AV
               </a>
             </div>
             <div className="col-12 col-lg-3 col-md-4 col-sm-6">
-              <a
-                class="btn btn-lg but-b"
-                href=""
-                target="_blank"
-              >
+              <a class="btn btn-lg but-b" href="" target="_blank">
                 Download Proposal
               </a>
             </div>
