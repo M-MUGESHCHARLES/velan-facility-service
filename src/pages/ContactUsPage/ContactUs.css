@@ -1,0 +1,20 @@
+.tex{
+    padding-left: 15px;
+    margin-bottom: 20px;
+    border-left: 7px solid #0f1d5d;
+    font-size: 26px;
+    color: #0f1d5c;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.but-b{
+    background-color: #0f1d5c;
+    color: white;
+}
+.address h4{
+    color: #093ab9;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
