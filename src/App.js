@@ -1,4 +1,5 @@
 import './App.css';
+<<<<<<< HEAD
 import HomePage from './pages/HomePage/HomePage';
 import { Layout } from './pages/Layout';
 import { AboutUs } from './pages/AboutUsPage/AboutUs';
@@ -8,6 +9,27 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
+=======
+<<<<<<< Updated upstream
+import Footer from './components/Footer/Footer';
+import { Navbar } from './components/Navbar/Navbar';
+
+function App() {
+  return (
+    <div className="App">
+      <Navbar />
+      <Footer />
+    </div>
+=======
+import HomePage from './pages/HomePage/HomePage';
+import { Layout } from './pages/Layout';
+import { AboutUs } from './pages/AboutUsPage/AboutUs';
+import { ServiceHomePage } from './pages/ServicePage/ServiceHomePage';
+import { ServiceDetailPage } from './pages/ServicePage/ServiceDetailPage';
+
+function App() {
+  return (
+>>>>>>> b41277ad8d8835fc68ded1582e08fc16eebbb5c2
     <>
       <BrowserRouter>
       <Routes>
@@ -22,6 +44,10 @@ function App() {
       </Routes>
       </BrowserRouter>      
     </>
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> b41277ad8d8835fc68ded1582e08fc16eebbb5c2
   );
 }
 
