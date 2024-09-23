@@ -13,8 +13,8 @@ export const AboutUs = () => {
         <img src={About_Us} className="img-fluid w-100 banner-image" alt="" />
         <div class="card-img-overlay text-center align-content-center text-white">
           <h3 className="position-relative fw-bold fs-1 mt-auto mb-auto">
-            <span className="border-5 rounded-4 border-secondary border py-3 px-1 border-bottom-0 border-end-0 ">
-              <span className="border-5 rounded-3 border-secondary-subtle border py-2 px-4 border-bottom-0 border-end-0 ">
+            <span className="border-5 rounded-4 border-secondary border py-3 px-1 border-start-0 border-end-0 ">
+              <span className="border-5 rounded-3 border-secondary-subtle border py-2 px-4 border-bottom-0 border-top-0 ">
                 ABout Us 
               </span>
             </span>
@@ -142,7 +142,7 @@ export const AboutUs = () => {
             <hr className="hr" />
           </div>
           <div className="row m-0 px-md-5 " id="WhyChoose">
-            <h2 className="col-12 my-4 fw-bold order-0 text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
+            <h2 className="C1 col-12 my-4 fw-bold order-0 text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
               Why Choose VFS ?
             </h2>
             <div className="col-10 col-md-4 order-1 order-md-2 text-center mx-auto ">
@@ -165,7 +165,7 @@ export const AboutUs = () => {
             <hr className="hr" />
           </div>
           <div className="row m-0 px-md-5 " id="HowWeWork">
-            <h2 className="my-4 col-12 fw-bold text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
+            <h2 className="C1 my-4 col-12 fw-bold text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
               How We Work ?
             </h2>
             <div className="col-10 col-md-4 text-center mx-auto">
@@ -189,7 +189,7 @@ export const AboutUs = () => {
             <hr className="hr" />
           </div>
           <div className="row m-0 px-md-5" id="WhyUs">
-            <h2 className="my-4 col-12 order-0 fw-bold text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
+            <h2 className="C1 my-4 col-12 order-0 fw-bold text-decoration-underline mb-4 link-offset-2 link-offset-1-hover">
               Why Us ?
             </h2>
             <div className="col-10 col-md-4 order-1 order-md-2 text-center mx-auto ">
