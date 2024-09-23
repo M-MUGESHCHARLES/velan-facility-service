@@ -1,8 +1,24 @@
 import React from "react";
 import LOGO from "../assets/VFS_Logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { ServiceData } from "../assets/data/ServiceDataContext";
 
 export const Navbar = () => {
+  const {SecurityServices , FacilityServices, ManPowerServices} = ServiceData();
+  
+  const handleOffcanvas = () => {
+    // Close the offcanvas and remove the backdrop
+    const offcanvasElement = document.querySelector(".offcanvas");
+    if (offcanvasElement) {
+      offcanvasElement.classList.remove("show"); // Hide offcanvas
+    }
+
+    const backdrop = document.querySelector(".offcanvas-backdrop");
+    if (backdrop) {
+      backdrop.remove(); // Remove backdrop
+    }
+  };
+
   return (
     <header className="">
       <nav className="navbar navbar-expand-lg border-bottom bg-body-tertiary ">
@@ -18,7 +34,7 @@ export const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="offcanvas offcanvas-start" tabindex="-1" id="NavBar">
+          <div className="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="NavBar">
             <div className="offcanvas-header">
               <img src={LOGO} className="" alt="" id="Logo" />
               <h5 className="offcanvas-title fw-bold" id="VFSName">
@@ -35,7 +51,6 @@ export const Navbar = () => {
               <ul className="navbar-nav justify-content-end mx-auto">
                 <li className="nav-item" data-bs-dismiss="offcanvas">
                   <Link to="/">
-                    
                     <button className="nav-link fw-semibold px-lg-3 active">
                       Home
                     </button>
@@ -44,152 +59,96 @@ export const Navbar = () => {
                 <li className="nav-item dropdown">
                   <button
                     className="nav-link fw-semibold px-lg-3 dropdown-toggle"
-                    role="button"
                     data-bs-toggle="dropdown"
-                    data-bs-dismiss="offcanvas"
                   >
-                    <Link to="/security-services">Security Services </Link>
+                    Security Services
                   </button>
 
                   <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Security Gaurd
-                      </a>
+                    <li className="fw-bold" >
+                      <Link
+                        to="/security-service"
+                        className="dropdown-item fw-bold"
+                        onClick={handleOffcanvas}
+                      >
+                        All Security Services
+                      </Link>
                     </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Bouncer & Body Gaurd
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Escort Gaurd
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Female Security Gaurd
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Cash Management
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Dog Squads Service
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Event Security
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Tourist Security
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Office Security
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Building Security
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Bank Security
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Industrial Security
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Retail Security
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Hospital Security
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Property Security
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        School Security
-                      </a>
-                    </li>
+                    {SecurityServices.map((s, i) => (
+                      <li key={i}>
+                        <Link
+                          to={`/security-service/${s.name}`}
+                          className="dropdown-item"
+                          onClick={handleOffcanvas}
+                        >
+                          {s.title}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <button
                     className="nav-link fw-semibold px-lg-3 dropdown-toggle"
-                    href="#"
-                    role="button"
                     data-bs-toggle="dropdown"
                   >
                     Facility Services
-                  </a>
+                  </button>
                   <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        House Keeping
-                      </a>
+                    <li className="">
+                      <Link
+                        to="/facility-service"
+                        className="dropdown-item fw-bold fw-bold"
+                        onClick={handleOffcanvas}
+                      >
+                        All Facility Services
+                      </Link>
                     </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Office Boy
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Pantry Boy
-                      </a>
-                    </li>
+                    {FacilityServices.map((s, i) => (
+                      <li key={i}>
+                        <Link
+                          to={`/facility-service/${s.name}`}
+                          className="dropdown-item"
+                          onClick={handleOffcanvas}
+                        >
+                          {s.title}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <button
                     className="nav-link fw-semibold px-lg-3 dropdown-toggle"
-                    href="#"
-                    role="button"
                     data-bs-toggle="dropdown"
                   >
                     Manpower Services
-                  </a>
+                  </button>
                   <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Front & Back Office Manpower
-                      </a>
+                    <li className="fw-bold">
+                      <Link
+                        to="/manpower-service"
+                        className="dropdown-item fw-bold"
+                        onClick={handleOffcanvas}
+                      >
+                        All Manpower Services
+                      </Link>
                     </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Temp Staffing
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" data-bs-dismiss="offcanvas">
-                        Event Staffing
-                      </a>
-                    </li>
+                    {ManPowerServices.map((s, i) => (
+                      <li key={i}>
+                        <Link
+                          to={`/manpower-service/${s.name}`}
+                          className="dropdown-item"
+                          onClick={handleOffcanvas}
+                        >
+                          {s.title}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <Link to="/About-us">
+                  <Link to="/about-us">
                     <button
                       className="nav-link fw-semibold px-lg-3"
                       data-bs-dismiss="offcanvas"
@@ -199,7 +158,7 @@ export const Navbar = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/Contact-us">
+                  <Link to="/contact-us">
                     <button
                       className="nav-link fw-semibold px-lg-3"
                       data-bs-dismiss="offcanvas"
@@ -215,7 +174,6 @@ export const Navbar = () => {
       </nav>
       <div className="border-bottom py-2">
         <h4 className="fw-bold text-center m-0" id="VFSName">
-          
           VELAN FACILITY SERVICE
         </h4>
       </div>

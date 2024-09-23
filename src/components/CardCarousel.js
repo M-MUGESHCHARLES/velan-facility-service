@@ -33,6 +33,7 @@ const CardCarousel = (props) => {
           slidesToShow: 2.2,
           slidesToScroll: 1,
           arrows: false,
+          infinite: true,
         },
       },
       {
@@ -43,6 +44,7 @@ const CardCarousel = (props) => {
           arrows: false,
           dots: false,
           fade: true,
+          infinite: true,
         },
       },
     ],

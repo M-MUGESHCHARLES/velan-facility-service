@@ -21,10 +21,8 @@ const QuickWhatsapp = () => {
 export const Layout = () => {
   return (
     <>
-      <Navbar />
       <Outlet/>
       <QuickWhatsapp />
-      <Footer />
     </>
   );
 }

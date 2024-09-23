@@ -6,12 +6,15 @@ import { ServiceHomePage } from "./pages/ServicePage/ServiceHomePage";
 import { ServiceDetailPage } from "./pages/ServicePage/ServiceDetailPage";
 import { AboutUs } from './pages/AboutUsPage/AboutUs';
 import ContactUs from './pages/ContactUsPage/ContactUs';
+import { Navbar } from './components/Navbar';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <Navbar/>
       <Routes>
         <Route path="/"  element={<Layout/>}>
           <Route index element={<HomePage/>} />
@@ -23,6 +26,7 @@ function App() {
           <Route path='contact-Us' element={<ContactUs/>} />   
         </Route>
       </Routes>
+      <Footer/>
       </BrowserRouter>      
     </>
   );
