@@ -21,7 +21,11 @@ export const ServiceDetailPage = () => {
           />
           <div class="card-img-overlay text-center align-content-center text-white">
             <h3 className="position-relative fw-bold fs-1 mt-auto mb-auto">
-              {service.title}
+              <span className="border-5 rounded-4 border-warning border py-3 px-1 border-bottom-0 border-end-0 ">
+                <span className="border-5 rounded-3 border-warning-subtle border py-2 px-4 border-bottom-0 border-end-0 ">
+                  {service.title}
+                </span>
+              </span>
             </h3>
           </div>
         </div>

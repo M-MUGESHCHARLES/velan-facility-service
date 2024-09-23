@@ -5,7 +5,7 @@ div hr.hr {
 .banner-image {
     height: 350px;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     display: block;
     filter: brightness(0.5);
 }
@@ -213,10 +213,15 @@ height: 40px;
 
 /* ====================================================== AboutUs.js */
 
-#AboutUs::after {
-     content: "";
+#HomePageSection1 #OurMision {
+    position: relative;
+    z-index: 1; 
+}
+
+#AboutUs #OurMission::after {
+     content: " ";
     position: absolute;
-    top: 25%;
+    /* top: 25%; */
     left: 0;
     width: 100%;
     height: 100%;
@@ -233,6 +238,7 @@ height: 40px;
 {
   height: auto;
   width: 120px;   
+  opacity: 85%;
 }
 @media screen and (width < 600px) {
         .mission-svg,

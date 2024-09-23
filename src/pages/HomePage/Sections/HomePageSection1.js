@@ -5,7 +5,7 @@ export const HomePageSection1 = () => {
   return (
     <section className="py-3 px-5 row m-0" id="HomePageSection1">
       <h2
-        className="my-3 text-center text-decoration-underline mb-4 link-offset-2 link-offset-1-hover lh-base"
+        className="my-3 text-center C1 text-decoration-underline mb-4 link-offset-2 link-offset-1-hover lh-base"
         style={{ fontWeight: "900" }}
       >
         WELCOME TO VELAN FACILITY SERVICE

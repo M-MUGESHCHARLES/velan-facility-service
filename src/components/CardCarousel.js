@@ -20,7 +20,7 @@ const CardCarousel = (props) => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3.5,
+          slidesToShow: 3.2,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -34,6 +34,7 @@ const CardCarousel = (props) => {
           slidesToScroll: 1,
           arrows: false,
           infinite: true,
+          dots:false,
         },
       },
       {

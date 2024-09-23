@@ -12,8 +12,8 @@ const HomePageSection3 = () => {
       <section className="py-3 px-5 row m-0" id="HomePageSection2">
         <div className="row m-0">
           <div className="col-12 text-center">
-            <h2 className="my-2 fw-bold text-decoration-underline mb-4 link-offset-2 link-offset-1-hover lh-base">
-              FACILITY MANAGEMENT SERVICES
+            <h2 className="my-2 fw-bold lh-base">
+              <span className="Heading-Text">FACILITY MANAGEMENT SERVICES</span>
             </h2>
           </div>
           <div className="col-12 row m-0 p-0">
