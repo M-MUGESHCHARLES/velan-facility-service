@@ -34,6 +34,50 @@ div hr.hr {
     font-size: 30px;
 }
 
+
+.largeMenu {
+    width: fit-content;
+    max-width: 600px;
+}
+
+.smallMenu {
+    max-width: 300px;
+}
+
+.menu-options {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    /* left: 10px; */
+    /* width: fit-content; */
+    /* width: min-content; */
+}
+.menu-options ul {
+    list-style-type: none !important;
+    
+}
+
+.menu-options li a {
+    color: #0f1d5d;
+}
+
+.menu-options li:hover a , li.nav-item:hover .nav-links {
+    font-weight: bold !important;
+    background-color: #2e43a4 !important;
+    color: whitesmoke !important;
+}
+
+
+#menu:hover + .menu-options ,.menu-options:hover,
+.menu-options li:hover  {
+   display: block !important;
+   z-index: 4 !important;
+}
+
+li.nav-item .nav-links {
+    color: #0f1d5c !important;
+}
+
 /* ==================================================== Footer.js */
 
 .social-icons{
