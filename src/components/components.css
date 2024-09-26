@@ -225,11 +225,41 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 /* ===================================================== HomePageSection2.js */
 
 
-/* ===================================================== Card.js */
+/* ===================================================== CardComponent.js */
 
-#Card #Card-Image{
-    object-fit: cover;
+.card-link {
+    display: inline-block;
+  position: relative;
+  color: #0d6efd;
 }
+
+.card-link::after {
+    content: '';
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0d6efd;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.card-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#Card {
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+#Card:hover {
+  box-shadow: 0px 4px 20px #0C359E !important; 
+}
+
 
 /* ===================================================== CardCarousel.js */
 

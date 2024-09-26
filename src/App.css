@@ -9,6 +9,7 @@ a {
 .indent {
     text-align: justify;
     text-indent: 20px;
+    font-weight: 600;
 }
 
 .Heading-Text {

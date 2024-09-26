@@ -3,7 +3,7 @@ import React from 'react'
 export const SchoolSecurity = () => {
   return (
     <div className="indent px-5">
-        <h5 className='fw-bold my-4 '>Educational Institute Security</h5>
+        <h5 className='fw-bold my-4 '><strong>Educational Institute Security</strong></h5>
       <p className='my-3'>
         Securing a school or college is crucial, as it involves the safety of
         students who are vulnerable to various threats. Inadequate security can

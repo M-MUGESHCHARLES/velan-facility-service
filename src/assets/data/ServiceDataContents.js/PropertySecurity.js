@@ -3,8 +3,8 @@ import React from 'react'
 export const PropertySecurity = () => {
   return (
     <div className='indent px-5'>
-        <h5 className='fw-bold my-4'>Security for Plot and Property</h5>
-      <p className='my-3'>
+        <h5 className='fw-bold mt-4'><strong>Security for Plot and Property</strong></h5>
+      <p className='mb-3'>
         Velan Facility Services specializes in securing recovered properties
         across India. Once assets are recovered by financial institutions
         through legal procedures, our expert team ensures the protection of the

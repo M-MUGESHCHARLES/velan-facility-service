@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import { ServiceData } from '../../assets/data/ServiceDataContext';
 
@@ -30,8 +30,14 @@ export const ServiceDetailPage = () => {
           </div>
         </div>
 
-        <div className="px-md-5 py-3">
-          {service.contents && <service.contents />}
+        <h3 className="my-4 fw-bold lh-base text-center">
+          <span className="Heading-Text">{service.title} Service </span>
+        </h3>
+
+        <div className="px-lg-5">
+          <div className="px-md-5 pb-3">
+            {service.contents && <service.contents />}
+          </div>
         </div>
       </section>
     </>

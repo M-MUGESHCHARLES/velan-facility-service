@@ -3,6 +3,7 @@ import { ServiceData } from "../../../assets/data/ServiceDataContext";
 import CardCarousel from "../../../components/CardCarousel";
 import { Button } from "@mui/material";
 import ManPower from "../../../assets/images/manpower-services.jpeg";
+import { Link } from "react-router-dom";
 
 export const HomePageSection4 = () => {
   const { ManPowerServices } = ServiceData();
@@ -28,14 +29,16 @@ export const HomePageSection4 = () => {
                 Resource requirement on contract basis, as it protects them
                 against inefficiency of staff, high replacement cost, compliance
                 issue and complexity of labour laws.
-                <Button
-                  variant="text"
-                  sx={{
-                    fontWeight: "bold",
-                  }}
-                >
-                  Read More...
-                </Button>
+                <Link to='/manpower-service'>
+                  <Button
+                    variant="text"
+                    sx={{
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Read More...
+                  </Button>
+                </Link>
               </p>
             </div>
             <div

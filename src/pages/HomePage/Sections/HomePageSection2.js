@@ -3,6 +3,7 @@ import Security from '../../../assets/images/security services.jpeg'
 import CardCarousel from '../../../components/CardCarousel';
 import { ServiceData } from '../../../assets/data/ServiceDataContext';
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const HomePageSection2 = () => {
 
@@ -34,14 +35,17 @@ const HomePageSection2 = () => {
               customized security solutions, carefully tailored after assessing
               your specific pain points, taking into account factors such as the
               size, location, and nature of your business.
-              <Button
-                variant="text"
-                sx={{
-                  fontWeight: "bold",
-                }}
-              >
-                Read More...
-              </Button>
+              <Link to='/security-service'>
+                <Button
+                  variant="text"
+                  sx={{
+                    fontWeight: "bold",
+                  }}
+                  
+                >
+                  Read More...
+                </Button>
+              </Link>
             </p>
           </div>
           <div

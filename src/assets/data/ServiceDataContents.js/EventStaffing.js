@@ -24,7 +24,7 @@ export const EventStaffing = () => {
         <li> DJs</li>
         <li> Magicians</li>
       </ul>
-      <h6 className="mt-4 fw-semibold"> Why choose us ? </h6>
+      <h6 className="mt-4 fw-semibold"> <strong>Why choose us ?</strong> </h6>
       <ul className="mb-3">
         <li>Complete staffing and security solutions under one roof</li>
         <li>Professional, experienced team</li>

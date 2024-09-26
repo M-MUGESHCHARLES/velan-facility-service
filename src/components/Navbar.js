@@ -259,20 +259,20 @@ export const Navbar = () => {
                     ))}
                   </ul>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" data-bs-dismiss="offcanvas">
                   <Link
                     to="/about-us"
                     className="nav-link fw-semibold px-lg-3 nav-links"
-                    data-bs-dismiss="offcanvas"
+                    
                   >
                     About Us
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" data-bs-dismiss="offcanvas">
                   <Link
                     to="/contact-us"
                     className="nav-link fw-semibold px-lg-3 nav-links"
-                    data-bs-dismiss="offcanvas"
+                    
                   >
                     Contact Us
                   </Link>

@@ -1,5 +1,5 @@
-import securitygaurd from '../../assets/images/security.jpeg'
-import bodygaurd from "../../assets/images/bodygaurds.jpg";
+import securityguard from '../../assets/images/security.jpeg'
+import bodyguard from "../../assets/images/bodygaurds.jpg";
 import escort from "../../assets/images/escort security.jpg";
 import femalesecurity from "../../assets/images/female security.png";
 import cashmanagement from "../../assets/images/cash management security.jpg";
@@ -57,9 +57,9 @@ export const ServiceDataProvider = ({children}) => {
     const SecurityServices =[
         {
             id:1,
-            name:'security-gaurd',
-            title:"Security Gaurd",
-            image:securitygaurd,
+            name:'security-guard',
+            title:"Security Guard",
+            image:securityguard,
             detail:'Get trained Security Guard , Supervisor and Security Officer at competetive rate with excellent track record and PCC verified.',
             contents:SecurityGuard,
         },
@@ -67,22 +67,22 @@ export const ServiceDataProvider = ({children}) => {
             id:2,
             name:'bodyguard',
             title:"Bouncer / BodyGuard",
-            image:bodygaurd,
+            image:bodyguard,
             detail:'Hire professional , trained and well build Bouncers and Bodyguard for your short term or long term security needs.',
             contents:BodyGuard,
           },
         {
             id:3,
-            name:'escort-gaurd',
-            title:"Escort Gaurd",
+            name:'escort-guard',
+            title:"Escort Guard",
             image:escort,
-            detail: 'Hire Professional Escort Guard for safegaurd your female employees during commuting at night in compliance with S&E Act.',
+            detail: 'Hire Professional Escort Guard for safeguard your female employees during commuting at night in compliance with S&E Act.',
             contents:EscortGuard,
           },
         {
             id:4,
-            name:'female-gaurd',
-            title:"Female Gaurd",
+            name:'female-guard',
+            title:"Female Guard",
             image:femalesecurity,
             detail: ' Trained Lady Guard for frisking female visitors and securing your business like office, factory, building, mall, school and shop.',
             contents:FemaleGuard,

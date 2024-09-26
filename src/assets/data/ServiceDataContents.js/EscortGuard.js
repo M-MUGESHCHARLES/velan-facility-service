@@ -3,8 +3,8 @@ import React from 'react'
 export const EscortGuard = () => {
   return (
     <div className="indent px-5">
-        <h5 className='fw-bold my-4'>Escort Security Services</h5>
-      <p className='my-3'>
+        <h5 className='fw-bold mt-4'>Escort Security Services</h5>
+      <p className='mb-3'>
         Many workplaces where female employees work late hours or night shifts
         must provide pick-up and drop services with an escort guard to ensure
         their safety. This requirement is mandated by various state laws,
@@ -18,8 +18,8 @@ export const EscortGuard = () => {
         Escort guards require specialized skills, as their role involves
         safeguarding employees during transit, often under unique circumstances.
       </p>
-        <h6 className='fw-semibold my-4'>Escort Guard Training</h6>
-      <p className='mt-3'>
+        <h6 className='fw-semibold mt-4'><strong>Escort Guard Training</strong></h6>
+      <p className=''>
         At Velan Facility Services, we prioritize the training of our escort
         guards. They are prepared to handle situations such as:
       </p>

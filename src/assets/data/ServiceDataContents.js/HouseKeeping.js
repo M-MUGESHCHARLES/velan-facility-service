@@ -3,7 +3,7 @@ import React from 'react'
 export const HouseKeeping = () => {
   return (
     <div className="indent px-5">
-      <h5 className="my-4 fw-bold">
+      <h5 className="mt-4 fw-bold">
         Housekeeping Services by Velan Facility Services
       </h5>
       <p className="mb-3">
@@ -20,15 +20,15 @@ export const HouseKeeping = () => {
         services.
       </p>
       <p>
-        <h6 className="mt-4 fw-semibold">How it Works</h6>
-        <br />
+        <h6 className="mt-4 fw-semibold"><strong>How it Works</strong></h6>
+        
         Our trained staff are deployed on a monthly contract basis, maintaining
         cleanliness throughout your premises. We manage compliance, absenteeism,
         and staff reliability, so you don&rsquo;t have to worry about daily
         operational issues.
       </p>
       <p>
-        <h6 className="mt-4 fw-semibold">Included Services</h6>
+        <h6 className="mt-4 fw-semibold"><strong>Included Services</strong></h6>
       </p>
       <ul className="mb-3">
         <li>Dusting furniture and appliances</li>

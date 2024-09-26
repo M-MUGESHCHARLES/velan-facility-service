@@ -6,20 +6,20 @@ export const EventSecurity = () => {
         <h3 className='fw-bold my-4'>
           Looking for Quick Short-Term Security Services for an Event?
         </h3>
-      <p className='my-3'>Contact us for an immediate response!</p>
-      <p className='my-3'>
+      <p className='mt-3'>Contact us for an immediate response!</p>
+      <p className='mb-3'>
         Velan Facility Services provides tailored security solutions combining
         electronic gadgets and trained personnel. We successfully cover a wide
         range of events, ensuring your occasion is secure and memorable.
       </p>
-        <h4 className='fw-bold my-4'>Why Choose Velan Facility Services?</h4>
-      <p className='my-3'>
+        <h5 className='fw-bold mt-4'>Why Choose Velan Facility Services?</h5>
+      <p className='mb-3'>
         Our unique approach to event security ensures smooth operations from
         start to finish. Unlike others, we don't just provide personnel; we
         assign an Assignment Manager to oversee all ground-level activities,
         making you worry-free.
       </p>
-        <h4 className='fw-bold mt-4'>Our Services Include:</h4>
+        <h6 className='fw-bold mt-4'><strong>Our Services Include:</strong></h6>
       <ul className='mb-3'>
         <li>Event Staff (anchors, guest greeters, attendants)</li>
         <li>Traffic Wardens</li>
@@ -33,8 +33,8 @@ export const EventSecurity = () => {
           etc.)
         </li>
       </ul>
-        <h4 className='fw-bold my-4'>How to Hire?</h4>
-      <p className='my-3'>
+        <h6 className='fw-bold mt-4'><strong>How to Hire?</strong></h6>
+      <p className='mb-3'>
         Booking is easy! Reach out via call or email with your requirements, and
         receive a quotation within two hours. Once approved, our team will
         handle everything else.

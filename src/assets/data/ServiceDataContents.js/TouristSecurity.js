@@ -3,8 +3,8 @@ import React from 'react'
 export const TouristSecurity = () => {
   return (
     <div className="indent px-5">
-      <h3 className='my-4 fw-bold'>Tourist Protection Service for Foreigners and Expats</h3>
-      <p className='my-3'>
+      <h3 className='mt-4 fw-bold'>Tourist Protection Service for Foreigners and Expats</h3>
+      <p className='mb-3'>
         India offers a unique travel experience, rich in heritage and diverse
         culture. With language and customs varying across regions, there's
         something for everyone to explore.
@@ -21,14 +21,14 @@ export const TouristSecurity = () => {
         Officers for various popular destinations, including Goa, Delhi, and the
         Taj Mahal.
       </p>
-      <h3 className='my-4 fw-semibold'>PSO Cum Driver Service</h3>
-      <p className='my-3'>
+      <h5 className='mt-4 fw-semibold'><strong>PSO Cum Driver Service</strong></h5>
+      <p className='mb-3'>
         Our Personal Security Officers can double as drivers, helping you save
         costs and space. Each PSO cum Driver is licensed, physically fit, and
         knowledgeable about local areas. You can hire this service for short or
         long-term needs, with just a day's notice for short-term bookings.
       </p>
-      <h3 className='mt-4 fw-semibold'>Why Choose Us?</h3>
+      <h5 className='mt-4 fw-semibold'><strong>Why Choose Us?</strong></h5>
       <ul className='mb-3'>
         <li>
           Fully licensed security company with adherence to all regulations
@@ -42,7 +42,7 @@ export const TouristSecurity = () => {
           negotiators, and protectors, making your journey memorable.
         </li>
       </ul>
-      <h3 className='mt-4'>How to Hire</h3>
+      <h5 className='mt-4'><strong>How to Hire</strong></h5>
       <p className='mb-3'>
         Booking our service is simple. Reach out via call or email with your
         requirements, and receive a quotation within two hours. Once approved,

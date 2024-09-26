@@ -3,10 +3,10 @@ import React from 'react'
 export const PantryBoy = () => {
   return (
     <div className="indent px-5">
-      <h5 className='my-4 fw-bold'>
+      <h5 className='mt-4 fw-bold'>
         Pantry Boy Services
       </h5>
-      <p className='mt-3'>
+      <p className=''>
         Many companies choose to outsource non-core tasks to professionals, and
         pantry boy services are one such essential offering. Velan Facility
         Services provides reliable pantry boy services to organizations of all

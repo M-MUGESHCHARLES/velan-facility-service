@@ -3,8 +3,8 @@ import React from 'react'
 export const FemaleGuard = () => {
   return (
     <div className="indent px-5">
-        <h4 className='my-4 fw-bold'>Role of Female Security Guards</h4>
-      <p className='my-3'>
+        <h4 className='mt-4 fw-bold'>Role of Female Security Guards</h4>
+      <p className='mb-3'>
         Female security guards are often seen as approachable, bringing a calm
         presence to situations that could otherwise escalate. Their role is
         essential in locations with predominantly female visitors and children,

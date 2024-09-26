@@ -26,7 +26,7 @@ export const TempStaffing = () => {
         <li>Receptionist</li>
       </ul>
       <h6 className="mt-4 fw-semibold">
-        Advantages of Contract Staffing Service :
+        <strong>Advantages of Contract Staffing Service :</strong>
       </h6>
       <ul className="mb-3">
         <li>
@@ -44,7 +44,7 @@ export const TempStaffing = () => {
         Services for the best offers. You can also transfer your existing
         employees to our payroll to enjoy the above benefits.
       </p>
-      <h6 className="mt-4 fw-semibold"> Why choose us?</h6>
+      <h6 className="mt-4 fw-semibold"> <strong>Why choose us?</strong></h6>
       <ul>
         <li>Complete staffing and security solutions under one roof</li>
         <li>Professional, experienced team</li>

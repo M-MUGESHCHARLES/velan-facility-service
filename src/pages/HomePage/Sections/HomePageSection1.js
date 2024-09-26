@@ -1,5 +1,6 @@
 import React from "react";
 import Hero1 from "../../../assets/images/heroimg1.png";
+import { Link } from "react-router-dom";
 
 export const HomePageSection1 = () => {
   return (
@@ -35,9 +36,11 @@ export const HomePageSection1 = () => {
           that responds promptly to any emergencies, ensuring uninterrupted
           service.
         </p>
-        <button className="btn btn-outline-warning fw-bold">
-          Read More...
-        </button>
+        <Link to="/about-us">
+          <button className="btn btn-outline-warning fw-bold" >
+            Read More...
+          </button>
+        </Link>
       </div>
       <div className="mx-auto">
         <hr className="hr" />

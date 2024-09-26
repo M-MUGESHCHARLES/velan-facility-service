@@ -3,6 +3,7 @@ import { ServiceData } from "../../../assets/data/ServiceDataContext";
 import { Button } from "@mui/material";
 import Facility from "../../../assets/images/Facility-services.jpg";
 import CardCarousel from "../../../components/CardCarousel";
+import { Link } from "react-router-dom";
 
 const HomePageSection3 = () => {
   const { FacilityServices } = ServiceData();
@@ -37,14 +38,16 @@ const HomePageSection3 = () => {
                 company. Our Facility Management services provide Housekeeping
                 Service, Office Boy Service, Pantry Boy Service, and Labour
                 Service.
-                <Button
-                  variant="text"
-                  sx={{
-                    fontWeight: "bold",
-                  }}
-                >
-                  Read More...
-                </Button>
+                <Link to='/facility-service'>
+                  <Button
+                    variant="text"
+                    sx={{
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Read More...
+                  </Button>
+                </Link>
               </p>
             </div>
           </div>

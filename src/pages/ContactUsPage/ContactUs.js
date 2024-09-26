@@ -1,72 +1,73 @@
 import React from "react";
 import "./ContactUs.css";
-import contact1 from "../../assets/images/contact1.jpg";
-import contact2 from "../../assets/images/contact2.jpg";
-import contact3 from "../../assets/images/contact3.jpg";
+import Contact_Us3 from "../../assets/images/contact-us.jpg";
+import Contact_Us2 from "../../assets/images/contact-us banner2.jpg";
+import Contact_Us from '../../assets/images/contact-us banner.jpg'
+import Slider from "react-slick";
+import { FaMapLocationDot } from "react-icons/fa6";
+
+const Banner = () =>  {
+  var settings = {
+    dots: false,
+    arrows:false,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    accessibility: true,
+    adaptiveHeight: true,
+  };
+ return (
+     <Slider {...settings}>
+       <img src={Contact_Us} className="img-fluid w-100 banner-image" alt="" />
+       <img src={Contact_Us2} className="img-fluid w-100 banner-image" alt="" />
+     </Slider>
+ );};
 
 function ContactUs() {
   return (
-    <div>
-      {/* carousel */}
-      <div
-        id="carouselExampleAutoplaying"
-        className="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={contact1} class="d-block w-100" height={"500px"} alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src={contact2} class="d-block w-100" height={"500px"} alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src={contact3} class="d-block w-100" height={"500px"} alt="..." />
-          </div>
+    <div className="">
+      <div class="card m-0 p-0">
+        <Banner />
+        <div class="card-img-overlay text-center align-content-center text-white">
+          <h3 className="position-relative fw-bold fs-1 mt-auto mb-auto">
+            <span className="border-5 rounded-4 border-secondary border py-3 px-1 border-start-0 border-end-0 ">
+              <span className="border-5 rounded-3 border-secondary-subtle border py-2 px-4 border-bottom-0 border-top-0 ">
+                Contact Us
+              </span>
+            </span>
+          </h3>
         </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
       </div>
-      <div class="pt-5 pb-3" id="contact-us">
+
+      <div class="py-4 px-5" id="contact-us">
         <div class="container">
-          <div class="row confrm">
-            <div class="col-md-5 col-lg-4 coninfo">
-              <h1 className="tex">
-                <strong>Contact Us</strong>
-              </h1>
-              <p>
+              <h2 className="text-center fw-bold my-4 ">
+                <span className="Heading-Text">Contact Us</span>
+              </h2>
+          <div class="row ">
+            <div class="col-12 col-md-5 col-lg-6 px-lg-5 ">
+              <p className="indent">
                 You can reach us through call, filling up enquiry form, whatsapp
                 or through an email. We respond instantly. Our office addresses
                 are given below:
               </p>
 
-              <p>
-                Our security company alternate contact number is
-                <strong>7092140297 / 6369292028</strong>
+              <p className="fw-semibold mb-4">
+                Our security company alternate contact number is <br />
+                <strong> <a href="tel:+917092140297"> 7092140297</a> </strong> / 
+                <strong> <a href="tel:+916369292028"> 6369292028</a></strong>
               </p>
               <ul className="list-unstyled">
                 <li className="address">
-                  <h4 className="fs-5">
-                    <i className="fa-solid fa-location-dot fs-5"></i> VELAN
-                    FACILITY SERVICE
+                  <h4 className="fs-3 C1 fw-bold mb-3">
+                    <FaMapLocationDot />  VELAN FACILITY SERVICE
                   </h4>
-                  <p>
+                  <p className="fw-semibold">
                     No.6, R.E.Nagar,4th Street(West)
                     <br />
                     Porur, Chennai - 600116
@@ -76,9 +77,9 @@ function ContactUs() {
                 </li>
               </ul>
             </div>
-            <div class="col-md-7 col-lg-8">
-              <h3>Request a quote</h3>
-              <p>
+            <div class="col-12 col-md-7 col-lg-6 px-lg-5">
+              <h3 className="fw-semibold C1" >Get a Quote</h3>
+              <p className="fw-semibold mb-4">
                 Please fill up the Inquiry Form. We will contact you within 2
                 working hours
               </p>
@@ -239,6 +240,7 @@ function ContactUs() {
           </div>
         </div>
       </div>
+
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2117.040146819699!2d80.1367948361909!3d13.018643867079401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52605a1aa6362f%3A0xe041c4ae0d786324!2sLakshmi%20Nagar%2C%20Moulivakkam%2C%20Chennai%2C%20Tamil%20Nadu!5e1!3m2!1sen!2sin!4v1726997115108!5m2!1sen!2sin"
         className="w-100"

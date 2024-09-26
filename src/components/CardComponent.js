@@ -25,12 +25,14 @@ export const CardComponent = (props) => {
         height: "350px",
       }}
       className="mx-auto mx-2 my-3  rounded-3 shadow border-2 border border-warning"
+      id='Card'
     >
       <CardMedia
         component="img"
         alt={props.service.title}
         height="150"
         image={props.service.image}
+        id='Card-Img'
       />
       <CardContent sx={{ flexGrow: 1, backgroundColor: "#F0EBE3" }}>
         <Typography
@@ -44,6 +46,7 @@ export const CardComponent = (props) => {
         >
           {props.service.title}
         </Typography>
+        <hr className='mx-auto border-2 border-secondary m-0 py-1'/>
         <Typography
           component="p"
           sx={{
@@ -59,13 +62,10 @@ export const CardComponent = (props) => {
           {props.service.detail}
         </Typography>
         <CardActions>
-          <Typography variant='subtitle2' sx={{fontSize:'10px'}} onClick={handleClick} >
-            <button 
-              className="text-primary btn icon-link icon-link-hover ms-0 ps-0"
-              
+          <Typography variant='subtitle2' sx={{fontSize:'15px', textWrap:'nowrap' }} onClick={handleClick}
+              className="text-primary card-link btn icon-link icon-link-hover ms-0 ps-0"
             >
               Know More <IoMdArrowRoundForward className="bi" />
-            </button>
           </Typography>
         </CardActions>
       </CardContent>

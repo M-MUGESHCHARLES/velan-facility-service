@@ -3,8 +3,8 @@ import React from 'react'
 export const DogSquad = () => {
   return (
     <div className="indent px-5">
-        <h4 className='fw-bold my-4'>Dog Squad Services</h4>
-      <p className='my-3'>
+        <h4 className='fw-bold mt-4'>Dog Squad Services</h4>
+      <p className='mb-3'>
         Looking for top-notch Dog Squad services? Whether you need to secure
         your property, person, or an event, Velan Facility Services has you
         covered.
@@ -16,8 +16,8 @@ export const DogSquad = () => {
         These squads are effective for perimeter patrol, facility searches, and
         intruder detection.
       </p>
-        <h5 className='my-4 fw-bold'>Security Dog Training</h5>
-      <p className='my-3'>
+        <h6 className='mt-4 fw-bold'><strong>Security Dog Training</strong></h6>
+      <p className='mb-3'>
         Our training begins with essential obedience to ensure dogs are
         disciplined and responsive. We use clear commands that dogs can
         understand and act upon, while also managing their natural aggression.
