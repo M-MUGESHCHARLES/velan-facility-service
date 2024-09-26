@@ -1,6 +1,7 @@
 import React from 'react'
 import { CardComponent } from '../../components/CardComponent';
 import { ServiceData } from '../../assets/data/ServiceDataContext';
+import { ButtonsSection } from '../../components/ButtonsSection';
 
 export const ServiceHomePage = (props) => {
     const { ServiceCategory } = ServiceData();
@@ -21,11 +22,11 @@ export const ServiceHomePage = (props) => {
             />
             <div class="card-img-overlay text-center align-content-center text-white">
               <h3 className="position-relative fw-bold fs-1 mt-auto mb-auto">
-                  <span className="border-5 rounded-4 border-primary border py-3 px-1 border-start-0 border-end-0 ">
-                    <span className="border-5 rounded-3 border-primary-subtle border py-2 px-4 border-bottom-0 border-top-0 ">
+                <span className="border-5 rounded-4 border-primary border py-3 px-1 border-start-0 border-end-0 ">
+                  <span className="border-5 rounded-3 border-primary-subtle border py-2 px-4 border-bottom-0 border-top-0 ">
                     {s.title}
-                    </span>
                   </span>
+                </span>
               </h3>
             </div>
           </div>
@@ -44,6 +45,7 @@ export const ServiceHomePage = (props) => {
               ))}
             </div>
           </div>
+            <ButtonsSection />
         </section>
       ))}
     </>

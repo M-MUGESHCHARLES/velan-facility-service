@@ -1,10 +1,9 @@
 import React from "react";
-import "./ContactUs.css";
-import Contact_Us3 from "../../assets/images/contact-us.jpg";
 import Contact_Us2 from "../../assets/images/contact-us banner2.jpg";
 import Contact_Us from '../../assets/images/contact-us banner.jpg'
 import Slider from "react-slick";
 import { FaMapLocationDot } from "react-icons/fa6";
+import { ButtonsSection } from "../../components/ButtonsSection";
 
 const Banner = () =>  {
   var settings = {
@@ -29,6 +28,7 @@ const Banner = () =>  {
  );};
 
 function ContactUs() {
+
   return (
     <div className="">
       <div class="card m-0 p-0">
@@ -46,9 +46,9 @@ function ContactUs() {
 
       <div class="py-4 px-5" id="contact-us">
         <div class="container">
-              <h2 className="text-center fw-bold my-4 ">
-                <span className="Heading-Text">Contact Us</span>
-              </h2>
+          <h2 className="text-center fw-bold my-4 ">
+            <span className="Heading-Text">Contact Us</span>
+          </h2>
           <div class="row ">
             <div class="col-12 col-md-5 col-lg-6 px-lg-5 ">
               <p className="indent">
@@ -59,13 +59,20 @@ function ContactUs() {
 
               <p className="fw-semibold mb-4">
                 Our security company alternate contact number is <br />
-                <strong> <a href="tel:+917092140297"> 7092140297</a> </strong> / 
-                <strong> <a href="tel:+916369292028"> 6369292028</a></strong>
+                <strong>
+                  
+                  <a href="tel:+917092140297"> 7092140297</a>
+                </strong> &nbsp;
+                / &nbsp;
+                <strong>
+                  
+                  <a href="tel:+916369292028"> 6369292028</a>
+                </strong>
               </p>
               <ul className="list-unstyled">
                 <li className="address">
                   <h4 className="fs-3 C1 fw-bold mb-3">
-                    <FaMapLocationDot />  VELAN FACILITY SERVICE
+                    <FaMapLocationDot /> VELAN FACILITY SERVICE
                   </h4>
                   <p className="fw-semibold">
                     No.6, R.E.Nagar,4th Street(West)
@@ -78,7 +85,7 @@ function ContactUs() {
               </ul>
             </div>
             <div class="col-12 col-md-7 col-lg-6 px-lg-5">
-              <h3 className="fw-semibold C1" >Get a Quote</h3>
+              <h3 className="fw-semibold C1">Get a Quote</h3>
               <p className="fw-semibold mb-4">
                 Please fill up the Inquiry Form. We will contact you within 2
                 working hours
@@ -241,43 +248,44 @@ function ContactUs() {
         </div>
       </div>
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2117.040146819699!2d80.1367948361909!3d13.018643867079401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52605a1aa6362f%3A0xe041c4ae0d786324!2sLakshmi%20Nagar%2C%20Moulivakkam%2C%20Chennai%2C%20Tamil%20Nadu!5e1!3m2!1sen!2sin!4v1726997115108!5m2!1sen!2sin"
-        className="w-100"
-        height="350"
-        style={{ border: 0 }}
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-      <section class="section-buttons py-4 text-center">
-        <div class="container">
-          <div className="row row-gap-3">
-            <div className="col-12 col-lg-3 col-md-4 col-sm-6">
-              <a class="btn btn-lg but-b" href="" target="_blank">
-                Introduction Video
-              </a>
-            </div>
-            <div className="col-12 col-lg-3 col-md-4 col-sm-6">
-              <a class="btn btn-lg but-b" href="" target="_blank">
-                Switch to Velan Office
-              </a>
-            </div>
-            <div className="col-12 col-lg-3 col-md-4 col-sm-6">
-              <a class="btn btn-lg but-b" href="" target="_blank">
-                Corporate AV
-              </a>
-            </div>
-            <div className="col-12 col-lg-3 col-md-4 col-sm-6">
-              <a class="btn btn-lg but-b" href="" target="_blank">
-                Download Proposal
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="mx-auto col-10">
+        <iframe
+          title="location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2117.040146819699!2d80.1367948361909!3d13.018643867079401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52605a1aa6362f%3A0xe041c4ae0d786324!2sLakshmi%20Nagar%2C%20Moulivakkam%2C%20Chennai%2C%20Tamil%20Nadu!5e1!3m2!1sen!2sin!4v1726997115108!5m2!1sen!2sin"
+          className="w-100 shadow-lg rounded-4"
+          height="350"
+          style={{ border: 0 }}
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <ButtonsSection/>
     </div>
   );
 }
 
 export default ContactUs;
+
+
+{
+  /* <form class="row g-3">
+                <div class="form-floating mb-2 col-12 col-md-10">
+                  <input type="text" class="form-control" id="floatingPassword" placeholder="Your Name"/>
+                  <label htmlFor="floatingPassword" className="ps-4"> Your Name</label>
+                </div>
+                <div class="form-floating mb-2 col-12 col-md-10 ">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Phone"/>
+                  <label htmlFor="floatingInput" className="ps-4">Phone </label>
+                </div>
+                <div class="form-floating mb-2 col-12">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="E-mail"/>
+                  <label htmlFor="floatingInput" className="ps-4">E-mail </label>
+                </div>
+                <div class="form-floating mb-3 col-12">
+                  <textarea class="form-control" placeholder="Your Enquiry" id="floatingTextarea2" style={{height:"100px"}}></textarea>
+                  <label htmlFor="floatingTextarea2" className="ps-4">Your Enquiry</label>
+                </div>
+              </form> */
+}

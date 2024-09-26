@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { ServiceData } from '../../assets/data/ServiceDataContext';
+import { ButtonsSection } from '../../components/ButtonsSection';
 
 export const ServiceDetailPage = () => {
     const { category, serviceName} = useParams();
@@ -39,6 +40,7 @@ export const ServiceDetailPage = () => {
             {service.contents && <service.contents />}
           </div>
         </div>
+        <ButtonsSection/>
       </section>
     </>
   );

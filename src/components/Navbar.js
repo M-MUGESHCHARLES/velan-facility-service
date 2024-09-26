@@ -20,7 +20,7 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="">
+    <header className="" id="Navbar">
       <nav className="navbar navbar-expand-lg border-bottom bg-body-tertiary ">
         <div className="container-fluid d-sm-flex ">
           <img src={LOGO} className="img-thumbnail" alt="" id="Logo" />
@@ -42,7 +42,7 @@ export const Navbar = () => {
           >
             <div className="offcanvas-header">
               <img src={LOGO} className="" alt="" id="Logo" />
-              <h5 className="offcanvas-title fw-bold" id="VFSName">
+              <h5 className="offcanvas-title fw-bold ps-4" id="VFSName">
                 VELAN FACILITY SERVICE
               </h5>
               <button
@@ -55,12 +55,18 @@ export const Navbar = () => {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end mx-auto">
                 <li className="nav-item" data-bs-dismiss="offcanvas">
-                  <Link to="/" className="nav-link fw-semibold px-lg-3 nav-links">
+                  <Link
+                    to="/"
+                    className="nav-link fw-semibold px-lg-3 nav-links"
+                  >
                     Home
                   </Link>
                 </li>
                 <li className="nav-item d-none d-lg-block">
-                  <button className="nav-link fw-semibold px-lg-3 nav-links" id="menu">
+                  <button
+                    className="nav-link fw-semibold px-lg-3 nav-links"
+                    id="menu"
+                  >
                     Security Services
                   </button>
 
@@ -95,7 +101,10 @@ export const Navbar = () => {
                 </li>
 
                 <li className="nav-item d-none d-lg-block">
-                  <button className="nav-link fw-semibold px-lg-3 nav-links" id="menu">
+                  <button
+                    className="nav-link fw-semibold px-lg-3 nav-links"
+                    id="menu"
+                  >
                     Facility Services
                   </button>
 
@@ -130,7 +139,10 @@ export const Navbar = () => {
                 </li>
 
                 <li className="nav-item d-none d-lg-block">
-                  <button className="nav-link fw-semibold px-lg-3 nav-links" id="menu">
+                  <button
+                    className="nav-link fw-semibold px-lg-3 nav-links"
+                    id="menu"
+                  >
                     Manpower Services
                   </button>
 
@@ -263,7 +275,6 @@ export const Navbar = () => {
                   <Link
                     to="/about-us"
                     className="nav-link fw-semibold px-lg-3 nav-links"
-                    
                   >
                     About Us
                   </Link>
@@ -272,7 +283,6 @@ export const Navbar = () => {
                   <Link
                     to="/contact-us"
                     className="nav-link fw-semibold px-lg-3 nav-links"
-                    
                   >
                     Contact Us
                   </Link>
@@ -282,7 +292,7 @@ export const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className="border-bottom py-2">
+      <div className="border-bottom bg-body-secondary py-2">
         <h4 className="fw-bold text-center m-0" id="VFSName">
           VELAN FACILITY SERVICE
         </h4>

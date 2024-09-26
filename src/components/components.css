@@ -22,6 +22,13 @@ div hr.hr {
 
 /* ==================================================== Navbar.js */
 
+#Navbar {
+    position: sticky;
+    -webkit-sticky:sticky;
+    top: 1px;
+    z-index: 8;
+}
+
 #Logo {
     height: auto;
     width: 50px;
@@ -321,4 +328,29 @@ height: 40px;
         {
             width: 90px;;
         }
+}
+
+
+/* ====================================================== ContactUs.js */
+
+#contact-us::after{
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-image: url(http://localhost:3000/static/media/VFS_Logo.2a4fbcdea946de98f25f.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* ===================================================== ButtonsGroup.js */
+
+#Button_links {
+    background-color: #0f1d5c !important;
+    color: #EAE4DD !important;
 }
