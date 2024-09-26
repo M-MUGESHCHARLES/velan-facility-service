@@ -40,16 +40,16 @@ const CarouselBanner = () => {
                 alt=""
                 className="card-img w-100 banner-image"
               />
-              <div className="card-img-overlay d-flex align-items-center">
-                <div className="p-5">
-                  <h3 className="card-title text-warning fw-bold pb-4">
+              <div className="card-img-overlay d-flex text-center align-items-center">
+                <div className="col-12 col-md-8 p-5">
+                  <h2 className="card-title text-warning fw-bold pb-4">
                     Security Service
-                  </h3>
-                  <p className="card-text p-3">
+                  </h2>
+                  <p className="card-text fw-bold ">
                     Security is our core business and we are very passionate
                     about our work.
                   </p>
-                  <a
+                  {/* <a
                     href="#"
                     target="parent"
                     className=" d-inline fw-bold pe-5 ps-3 py-2 rounded-1 text-bg-warning text-secondary"
@@ -57,7 +57,7 @@ const CarouselBanner = () => {
                   >
                     
                     Read More
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -70,17 +70,17 @@ const CarouselBanner = () => {
                 alt=""
                 className="card-img w-100 banner-image"
               />
-              <div className="card-img-overlay d-flex align-items-center">
-                <div className="p-5">
-                  <h3 className="card-title text-warning fw-bold pb-4">
-                    Dog SQUAD Service
-                  </h3>
-                  <p className="card-text p-3">
+              <div className="card-img-overlay d-flex text-center align-items-center">
+                <div className="col-12 col-md-8 p-5">
+                  <h2 className="card-title text-warning fw-bold pb-4">
+                    Dog Squad Service
+                  </h2>
+                  <p className="card-text fw-bold">
                     Our dog squad comprise of highly pedigreed and trained
                     German Shepherds, Doberman and Labradors canine along with
                     skilled and experienced handlers.
                   </p>
-                  <a
+                  {/* <a
                     href="#"
                     target="parent"
                     className=" d-inline fw-bold pe-5 ps-3 py-2 rounded-1 text-bg-warning text-secondary"
@@ -88,7 +88,7 @@ const CarouselBanner = () => {
                   >
                     
                     Read More
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -101,16 +101,16 @@ const CarouselBanner = () => {
                 alt=""
                 className="card-img w-100 banner-image"
               />
-              <div className="card-img-overlay d-flex align-items-center">
-                <div className="p-5">
-                  <h3 className="card-title text-warning fw-bold pb-4">
+              <div className="card-img-overlay d-flex text-center align-items-center">
+                <div className="col-12 col-md-8 p-5">
+                  <h2 className="card-title text-warning fw-bold pb-4">
                     House Keeping Service
-                  </h3>
-                  <p className="card-text p-3">
+                  </h2>
+                  <p className="card-text fw-bold">
                     We follow best housekeeping practice to earn customer
                     satisfaction and thereby customer retention.
                   </p>
-                  <a
+                  {/* <a
                     href="#"
                     target="parent"
                     className=" d-inline fw-bold pe-5 ps-3 py-2 rounded-1 text-bg-warning text-secondary"
@@ -118,7 +118,7 @@ const CarouselBanner = () => {
                   >
                     
                     Read More
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

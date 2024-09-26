@@ -14,13 +14,13 @@ export const ServiceHomePage = (props) => {
     <>
       {Service.map((s, i) => (
         <section className="ServicesHomePage" key={i}>
-          <div class="card m-0 p-0">
+          <div className="card m-0 p-0">
             <img
               src={s.banner}
               className="img-fluid w-100 banner-image"
               alt=""
             />
-            <div class="card-img-overlay text-center align-content-center text-white">
+            <div className="card-img-overlay text-center align-content-center text-white">
               <h3 className="position-relative fw-bold fs-1 mt-auto mb-auto">
                 <span className="border-5 rounded-4 border-primary border py-3 px-1 border-start-0 border-end-0 ">
                   <span className="border-5 rounded-3 border-primary-subtle border py-2 px-4 border-bottom-0 border-top-0 ">

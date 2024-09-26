@@ -14,13 +14,13 @@ export const ServiceDetailPage = () => {
   return (
     <>
       <section className="ServiceDetailPage">
-        <div class="card m-0 p-0">
+        <div className="card m-0 p-0">
           <img
             src={service.image}
             className="img-fluid w-100 banner-image"
             alt=""
           />
-          <div class="card-img-overlay text-center align-content-center text-white">
+          <div className="card-img-overlay text-center align-content-center text-white">
             <h3 className="position-relative fw-bold fs-1 mt-auto mb-auto">
               <span className="border-5 rounded-4 border-warning border py-3 px-1 border-bottom-0 border-end-0 ">
                 <span className="border-5 rounded-3 border-warning-subtle border py-2 px-4 border-bottom-0 border-end-0 ">

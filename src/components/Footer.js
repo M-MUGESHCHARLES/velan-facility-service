@@ -43,7 +43,7 @@ const Footer = () => {
           <h6 className='text-white mb-3'>Mail Us </h6>
           <p className='mb-3'>Feel free to send us your email address, and we{`’`}ll get back to you shortly.</p>
           <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-            <label for="newsletter1" className="visually-hidden">Email address</label>
+            <label htmlFor="newsletter1" className="visually-hidden">Email address</label>
             <input id="newsletter1" type="text" className="form-control" placeholder="Your Email address"/>
             <button className="btn btn-outline-secondary text-white" type="button">Send</button>
           </div>

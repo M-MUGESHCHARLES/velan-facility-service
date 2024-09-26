@@ -31,9 +31,9 @@ function ContactUs() {
 
   return (
     <div className="">
-      <div class="card m-0 p-0">
+      <div className="card m-0 p-0">
         <Banner />
-        <div class="card-img-overlay text-center align-content-center text-white">
+        <div className="card-img-overlay text-center align-content-center text-white">
           <h3 className="position-relative fw-bold fs-1 mt-auto mb-auto">
             <span className="border-5 rounded-4 border-secondary border py-3 px-1 border-start-0 border-end-0 ">
               <span className="border-5 rounded-3 border-secondary-subtle border py-2 px-4 border-bottom-0 border-top-0 ">
@@ -44,13 +44,13 @@ function ContactUs() {
         </div>
       </div>
 
-      <div class="py-4 px-5" id="contact-us">
-        <div class="container">
+      <div className="py-4 px-5" id="contact-us">
+        <div className="container">
           <h2 className="text-center fw-bold my-4 ">
             <span className="Heading-Text">Contact Us</span>
           </h2>
-          <div class="row ">
-            <div class="col-12 col-md-5 col-lg-6 px-lg-5 ">
+          <div className="row ">
+            <div className="col-12 col-md-5 col-lg-6 px-lg-5 ">
               <p className="indent">
                 You can reach us through call, filling up enquiry form, whatsapp
                 or through an email. We respond instantly. Our office addresses
@@ -84,22 +84,22 @@ function ContactUs() {
                 </li>
               </ul>
             </div>
-            <div class="col-12 col-md-7 col-lg-6 px-lg-5">
+            <div className="col-12 col-md-7 col-lg-6 px-lg-5">
               <h3 className="fw-semibold C1">Get a Quote</h3>
               <p className="fw-semibold mb-4">
                 Please fill up the Inquiry Form. We will contact you within 2
                 working hours
               </p>
 
-              <div class="wpcf7 js" id="wpcf7-f32-o2" lang="en-US" dir="ltr">
-                <div class="screen-reader-response">
+              <div className="wpcf7 js" id="wpcf7-f32-o2" lang="en-US" dir="ltr">
+                <div className="screen-reader-response">
                   <p role="status" aria-live="polite" aria-atomic="true"></p>
                   <ul></ul>
                 </div>
                 <form
                   action="/contact-us/#wpcf7-f32-o2"
                   method="post"
-                  class="wpcf7-form init"
+                  className="wpcf7-form init"
                   aria-label="Contact form"
                   novalidate="novalidate"
                   data-status="init"
@@ -129,18 +129,18 @@ function ContactUs() {
                       value="03AFcWeA6MNXuI5ZuBk3FaEGkGe39U9VZ3Sj16Q0MQ8UHrjodXtQcr_bjocfidDDtnfQlzJXMtRR5q_5omO9Xey8yzgfAIpE_kDPmmyS_pbqVD2pgS7Txhz3Cz4B6_T7BxXZOrZnX673NLnApUgVpYpzVM_khahW6MhblrBzNANcXXRLAH7E5zdiVziqJU7kmVHV3xX_gOA1uBGRiYGTbnfHK75BB2jKsCWxLoecl7lu4DZU6qU8vUMlZxXmLb_atJ_eq4q4XeM2P0I3ivgMf4oTPsC2Mshmfw39rPdayB4LnQGzvvVPblOVlul9--S1gCmstdt9ZUBfwM9ZutbXJIKzp74PfrrwBrGCjfBnsJaLF46G2w20s3DoVFwiAUQNZHe7n2N5JANjeSUDG7S1r6mQmJ_jTodN07NCovt0q6PxXLx_HgYhXykPnu0tTIHXvjOhjfRcmaFCb7w4M7H2kj6JX1c0AEo6fZrUIn8YcCLP8LyZmo_R8e12LCKPOYeVICGK67I2bkMctZZAFC8dUW-wjEdFwoP53hSyxshgsKA1LBKFlliLGGgPRFJ9-0RBdGigkRexhJpzIYkMokAaz1Hk6PtXYp3EyH-pTQRoWlN8n6zdXHyNmPFEAEsGlaaxbQonaUH8biVwQgcRAWpMLHHeEtHBeX_v5_1OyjhatmwSPbvd8SLYhtE9bTuHf-QPQj3WZWXLQF9KVdg7tqwNp1zekavTydwZYp9Xyl1vSfYQlGm8AvfVX7QfY7REQQhVj2N8GBv6-gUSuSIIA4iADxMLforBe90TvahACsnQ_ETur3hrLQdr2tqMcPUdh41WniQZO-A3a3wd_ocE_vO6QBBVhTbbU19bWZWA09yIDNtfhAqr9mDNZmIBB7-h3K7KjERVC2asHhNzZzFXFTeODONdp9WAiojJu2l9fUFsciH_dADj6lJGODN64"
                     />
                   </div>
-                  <div class="row">
-                    <div class="col-sm-6 form-group">
+                  <div className="row">
+                    <div className="col-sm-6 form-group">
                       <p>
                         <label>Contact Persons Name:</label>
                         <span
-                          class="wpcf7-form-control-wrap"
+                          className="wpcf7-form-control-wrap"
                           data-name="your-name"
                         >
                           <input
                             size="40"
                             maxlength="400"
-                            class="wpcf7-form-control wpcf7-text form-control"
+                            className="wpcf7-form-control wpcf7-text form-control"
                             aria-invalid="false"
                             value=""
                             type="text"
@@ -149,17 +149,17 @@ function ContactUs() {
                         </span>
                       </p>
                     </div>
-                    <div class="col-sm-6 form-group">
+                    <div className="col-sm-6 form-group">
                       <p>
                         <label>Email:</label>
                         <span
-                          class="wpcf7-form-control-wrap"
+                          className="wpcf7-form-control-wrap"
                           data-name="your-email"
                         >
                           <input
                             size="40"
                             maxlength="400"
-                            class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control"
+                            className="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control"
                             aria-required="true"
                             aria-invalid="false"
                             placeholder="abc@example.com"
@@ -171,18 +171,18 @@ function ContactUs() {
                       </p>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-sm-6 form-group">
+                  <div className="row">
+                    <div className="col-sm-6 form-group">
                       <p>
                         <label>Contact Number:</label>
                         <span
-                          class="wpcf7-form-control-wrap"
+                          className="wpcf7-form-control-wrap"
                           data-name="your-phone"
                         >
                           <input
                             size="40"
                             maxlength="400"
-                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                            className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
                             aria-required="true"
                             aria-invalid="false"
                             value=""
@@ -192,17 +192,17 @@ function ContactUs() {
                         </span>
                       </p>
                     </div>
-                    <div class="col-sm-6 form-group">
+                    <div className="col-sm-6 form-group">
                       <p>
                         <label>Company Name:</label>
                         <span
-                          class="wpcf7-form-control-wrap"
+                          className="wpcf7-form-control-wrap"
                           data-name="your-company"
                         >
                           <input
                             size="40"
                             maxlength="400"
-                            class="wpcf7-form-control wpcf7-text form-control"
+                            className="wpcf7-form-control wpcf7-text form-control"
                             aria-invalid="false"
                             value=""
                             type="text"
@@ -212,35 +212,35 @@ function ContactUs() {
                       </p>
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div className="form-group">
                     <p>
                       <label>Your Inquiry:</label>
                       <span
-                        class="wpcf7-form-control-wrap"
+                        className="wpcf7-form-control-wrap"
                         data-name="your-message"
                       >
                         <textarea
                           cols="40"
                           rows="10"
                           maxlength="2000"
-                          class="wpcf7-form-control wpcf7-textarea form-control"
+                          className="wpcf7-form-control wpcf7-textarea form-control"
                           aria-invalid="false"
                           name="your-message"
                         ></textarea>
                       </span>
                     </p>
                   </div>
-                  <div class="">
+                  <div className="">
                     <p>
                       <input
-                        class="wpcf7-form-control wpcf7-submit has-spinner btn btn-primary"
+                        className="wpcf7-form-control wpcf7-submit has-spinner btn btn-primary"
                         type="submit"
                         value="Submit"
                       />
-                      <span class="wpcf7-spinner"></span>
+                      <span className="wpcf7-spinner"></span>
                     </p>
                   </div>
-                  <div class="wpcf7-response-output" aria-hidden="true"></div>
+                  <div className="wpcf7-response-output" aria-hidden="true"></div>
                 </form>
               </div>
             </div>
@@ -270,21 +270,21 @@ export default ContactUs;
 
 
 {
-  /* <form class="row g-3">
-                <div class="form-floating mb-2 col-12 col-md-10">
-                  <input type="text" class="form-control" id="floatingPassword" placeholder="Your Name"/>
+  /* <form className="row g-3">
+                <div className="form-floating mb-2 col-12 col-md-10">
+                  <input type="text" className="form-control" id="floatingPassword" placeholder="Your Name"/>
                   <label htmlFor="floatingPassword" className="ps-4"> Your Name</label>
                 </div>
-                <div class="form-floating mb-2 col-12 col-md-10 ">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="Phone"/>
+                <div className="form-floating mb-2 col-12 col-md-10 ">
+                  <input type="text" className="form-control" id="floatingInput" placeholder="Phone"/>
                   <label htmlFor="floatingInput" className="ps-4">Phone </label>
                 </div>
-                <div class="form-floating mb-2 col-12">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="E-mail"/>
+                <div className="form-floating mb-2 col-12">
+                  <input type="email" className="form-control" id="floatingInput" placeholder="E-mail"/>
                   <label htmlFor="floatingInput" className="ps-4">E-mail </label>
                 </div>
-                <div class="form-floating mb-3 col-12">
-                  <textarea class="form-control" placeholder="Your Enquiry" id="floatingTextarea2" style={{height:"100px"}}></textarea>
+                <div className="form-floating mb-3 col-12">
+                  <textarea className="form-control" placeholder="Your Enquiry" id="floatingTextarea2" style={{height:"100px"}}></textarea>
                   <label htmlFor="floatingTextarea2" className="ps-4">Your Enquiry</label>
                 </div>
               </form> */
